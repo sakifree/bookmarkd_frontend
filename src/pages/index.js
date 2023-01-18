@@ -10,7 +10,7 @@ function Index(props) {
                 action="/create"
                 method="post"
             >
-                <input type="input" name="website Name" placeholder="webiste" />
+                <input type="input" name="website Name" placeholder="website" />
                 <input
                     type="text"
                     name="website"
