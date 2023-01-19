@@ -12,6 +12,7 @@ function Index(props) {
             >
         <input type="input" name="name" placeholder="website name" />
         <input type="text" name="website" placeholder="http://   " />
+        <input type="submit" value="Add Bookmark" />
             </Form>
 
             <h2>Book Marks</h2>
