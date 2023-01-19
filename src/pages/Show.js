@@ -6,9 +6,11 @@ function Show(props) {
 
     return(
         <div className="website">
-        <h1>{webiste.name}</h1>
-        <h2>{website.title}</h2>
+        <h1>{website.title}</h1>
+        <h2>{website.url}</h2>
         
     </div>
     )
 }
+
+export default Show
