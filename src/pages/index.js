@@ -10,8 +10,8 @@ function Index(props) {
                 action="/create"
                 method="post"
             >
-        <input type="input" name="name" placeholder="website name" />
-        <input type="text" name="website" placeholder="http://   " />
+    <input type="input" name="title" placeholder="website name" />
+        <input type="text" name="url" placeholder="http://   " />
         <input type="submit" value="Add Bookmark" />
             </Form>
 
