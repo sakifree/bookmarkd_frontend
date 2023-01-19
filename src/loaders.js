@@ -1,8 +1,9 @@
 const URL = "https://bookmarkd-backend-dev.onrender.com"
 
 export const bookMarksLoader = async () => {
-    const response = await fetch(URL + "/people");
+    const response = await fetch(URL + "/bookmark");
     const bookMarks = await response.json();
+   console.log(bookMarks)
     return bookMarks;
 }
 
