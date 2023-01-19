@@ -11,9 +11,7 @@ function Index(props) {
                 method="post"
             >
         <input type="input" name="name" placeholder="website name" />
-        <input type="text" name="website" placeholder="http://www.urladdress.com"
-
-                />
+        <input type="text" name="website" placeholder="http://" />
             </Form>
 
         </div>
