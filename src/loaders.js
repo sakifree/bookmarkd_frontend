@@ -7,8 +7,9 @@ export const bookMarksLoader = async () => {
     return bookMarks;
 }
 
-// export const bookMarkLoader = async ({params}) => {
-//     const response = await fetch(URL + "/people/" + params.id);
-//     const bookMark = await response.json();
-//     return bookMark;
-// }
+export const bookMarkLoader = async ({params}) => {
+    const response = await fetch(URL + "/bookmark/" + params.id);
+    const bookMark = await response.json();
+    console.log(bookMark)
+    return bookMark;
+}

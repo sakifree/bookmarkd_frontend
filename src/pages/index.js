@@ -2,7 +2,7 @@ import React from "react";
 import { Form, Link, useLoaderData } from "react-router-dom";
 
 function Index(props) {
-    const bookMark = useLoaderData();
+    const bookMarks = useLoaderData();
     return (
         <div>
             <h2>Add a New BookMark</h2>
@@ -17,13 +17,12 @@ function Index(props) {
 
             <h2>Book Marks</h2>
             <div className='container'>
-                {bookMark.map((bookMark) => (
+                {bookMarks.map((bookMark) => (
                     <div className="card" key={bookMark._id}>
-                        <Link to={`/${bookMark._id}`} className="bookMark">
-                            <h1>{bookMark.name}</h1>
+                        <Link to={`/${bookMark._id}`}>
+                            <h1>{bookMark.title}</h1>
                         </Link>
-                        
-                        <h3>{bookMark.title}</h3>
+                    
                     </div>
                 ))}
             </div>
