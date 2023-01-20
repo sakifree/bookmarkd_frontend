@@ -9,9 +9,9 @@ import {createAction, deleteAction, updateAction } from "./actions";
 const router = createBrowserRouter(
     createRoutesFromElements(
         <Route path="/" element={<App/>}>
-            <Route path="" element={<Index/>} loader= {bookMarksLoader}/>
+            <Route path="" element={<Index className="container"/>} loader= {bookMarksLoader}/>
             <Route path="create" action={createAction}/>
-            <Route path = ":id" element={<Show />} loader={bookMarkLoader} />
+            <Route path = ":id" element={<Show className="container"/>} loader={bookMarkLoader} />
             <Route path="update/:id" action={updateAction}/>
             <Route path="delete/:id" action={deleteAction} />
         </Route>
