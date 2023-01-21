@@ -1,4 +1,4 @@
-import { useLoaderData, Form} from "react-router-dom";
+import { useLoaderData, Form, Link} from "react-router-dom";
 
 
 function Show(props) {
@@ -22,6 +22,10 @@ function Show(props) {
             <Form action={`/delete/${bookmark._id}`} method="post">
                 <input type="submit" value={`delete ${bookmark.title}`}/>
             </Form>
+            <br></br>
+            <button>
+                <Link to="/">Home</Link>
+            </button>
     </div>
     )
 }
