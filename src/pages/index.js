@@ -28,7 +28,7 @@ function Index(props) {
 
            
             <div className='container'>
-            <h2>Book Marks</h2>
+            <h2>BookMarks</h2>
                 {bookMarks.map((bookMark) => (
                     <div className="card" key={bookMark._id}>
                         <Link to={`/${bookMark._id}`}>
