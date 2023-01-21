@@ -45,10 +45,6 @@ function Show(props) {
             <Form action={`/delete/${bookmark._id}`} method="post">
                 <button type="submit" class="btn btn-danger">delete {bookmark.title} </button>
             </Form>
-            <br></br>
-            <button>
-                <Link to="/">Home</Link>
-            </button>
         </div>
     </div>
     )
