@@ -9,7 +9,7 @@ function Show(props) {
         
         <h1>Bookmark Details</h1>
         <h2>Title: {bookmark.title}</h2>
-        <h2>Url: {bookmark.url}</h2>
+        <h2>Url: <a href= {bookmark.url}>{bookmark.url}</a></h2>
 
         <h2>Update {bookmark.title}</h2>
             <Form action={`/update/${bookmark._id}`} method="put">
